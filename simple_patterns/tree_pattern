@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+  int main(){
+  int a,b,c,d,e,i,s,z;
+  int treeLenght;
+  cout<<"This program displays a conifireous tree."<<endl;
+  cout<<"To see the Tree Enter how tall the tree should be."<<endl;
+  cin>>treeLenght;
+ // First, divide the number by 3. After that, check whether the result is odd or even. If it's odd, you're good to go. If it's even, add 1 to the size of the trunk, and this rule applies to both the width and height.
+ 
+  for(a=0;a<=treeLenght;a++){
+   int ns= treeLenght - a;
+    for(s=ns;s>=1;s--)
+    cout<<" ";
+  
+    for(b=1;b<=a;b++)
+    cout<<"\\";
+  
+    cout<<"|";
+  
+    for(z=1;z<=a;z++)
+    cout<<"/";
+  
+    cout<<endl;
+  }
+  for(c=1;c<=(treeLenght/3);c++){
+    for(e=1;e<=(treeLenght - 1);e++)
+    cout<<" ";
+    
+    for(d=1;d<=(treeLenght/3);d++)
+    cout<<"|";
+    cout<<endl;
+  }
+  
+  
+  return 0;
+  }
